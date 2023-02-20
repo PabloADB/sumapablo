@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="image\giphy.gif">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Suma</title>
+</head>
+<form name="calc"> 
+    <p>Numero 1: <input type="Text" name="operando1" value="0" size="12"> 
+    <br>
+    <p>Numero 2: <input type="Text" name="operando2" value="0" size="12">
+    <br>
+    <input type="Button" name="" value=" Suma + " onclick="calcula('+') ">
+    <br>
+    <br>
+    <p>Resultado: <input type="Text" name="resultado" value="0" size="12">
+    <br>
+    </form>
+    </body>
+    
+    <script>
+      function calcula(operacion){
+        var operando1 = document.calc.operando1.value 
+        var operando2 = document.calc.operando2.value
+        var result = eval(operando1 + operacion + operando2)
+        document.calc.resultado.value = result
+    }
+    </script>
+</html>
